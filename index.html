@@ -1,9 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hanifa Assignment Calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <header style="text-align: center">
+      <h1>Welcome to MyCal Hani</h1>
+      <section>
+        <p>
+          Hai Guys, Selamat datang di MyCal Hani :] <br />
+          Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar
+        </p>
+      </section>
+    </header>
+
+    <section>
+      <!-- ini title general -->
+      <div class="section-content">
+        <h3>Segitiga</h3>
+      </div>
+      <button type="button" id="switch-keliling"><u>Switch ke Keliling Segitiga</u></button>
+
+      <section>
+        <!-- ini konten atas luas segitiga -->
+        <section>
+          <div class="section-content">
+            <h2>Luas Segitiga</h2>
+          </div>
+          <div class="formula-img">
+            <img src="https://kartikasariyuni.wordpress.com/wp-content/uploads/2016/04/891d6-segitiga.jpg" />
+          </div>
+          <p>rumus ke ketiknya!!</p>
+        </section>
+        <hr />
+        <!-- ini konten bawah luas segitiga -->
+        <section>
+          <header style="text-align: center">
+            <h2>Hitung Luas Segitiga</h2>
+          </header>
+          <form>
+            <section>
+              <div><label>Alas:</label><input /></div>
+              <div><label>Tinggi:</label><input /></div>
+            </section>
+            <p>Diketahui:</p>
+            <button type="button">Hitung</button> <br />
+            <button type="button" id="reset-btn">Reset</button>
+          </form>
+        </section>
+      </section>
+    </section>
+  </body>
 </html>
