@@ -40,9 +40,20 @@ form > button {
   border: 1px solid bisque;
   border-radius: 18px;
 }
+.button-responsive > button {
+  padding: 18px;
+  background-color: rgba(167, 99, 11, 0.726);
+  border: 1px solid bisque;
+  border-radius: 18px;
+}
 #reset-btn {
   padding: 18px;
   background-color: tan;
   border: 1px solid bisque;
   border-radius: 18px;
+}
+@media only screen and (max-width: 480px) {
+  .button-responsive {
+    flex-direction: column;
+  }
 }

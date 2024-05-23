@@ -19,12 +19,12 @@
 
     <section>
       <!-- ini title general -->
-      <div class="section-content">
+      <div class="section-content"> 
         <h3>Segitiga</h3>
       </div>
-      <button type="button" id="switch-keliling"><u>Switch ke Keliling Segitiga</u></button>
+      <button type="button" id="switch-keliling" onclick="hideOrShow()"><u>Switch ke Keliling Segitiga</u></button>
 
-      <section>
+      <section id="luas-section">
         <!-- ini konten atas luas segitiga -->
         <section>
           <div class="section-content">
@@ -33,7 +33,7 @@
           <div class="formula-img">
             <img src="https://kartikasariyuni.wordpress.com/wp-content/uploads/2016/04/891d6-segitiga.jpg" />
           </div>
-          <p>rumus ke ketiknya!!</p>
+          <p>Rumus luas Segitiga : 1/2*Alas*Tinggi</p>
         </section>
         <hr />
         <!-- ini konten bawah luas segitiga -->
@@ -43,15 +43,53 @@
           </header>
           <form>
             <section>
-              <div><label>Alas:</label><input /></div>
-              <div><label>Tinggi:</label><input /></div>
+              <div><label>Alas:</label><input id="alas-input" type="number"/></div>
+              <div><label>Tinggi:</label><input id="tinggi-input" type="number"/></div>
             </section>
             <p>Diketahui:</p>
-            <button type="button">Hitung</button> <br />
-            <button type="button" id="reset-btn">Reset</button>
+           <div class="button-responsive" style="display : flex;" id="result-luas">
+            <button type="button" onclick="validation();" id="calculate-btn">Hitung</button> <br />
+            <button type="button" id="reset-btn" onclick="resetLuas"()>Reset</button>
+           </div>
           </form>
         </section>
       </section>
     </section>
+
+    <section id="keliling-section" style="padding-top: 32px; display: none;">
+      <!-- ini konten atas luas segitiga -->
+      <section>
+        <div class="section-content">
+          <h2>Keliling Segitiga</h2>
+        </div>
+        <div class="formula-img">
+          <img src="https://kartikasariyuni.wordpress.com/wp-content/uploads/2016/04/891d6-segitiga.jpg" />
+        </div>
+        <p>Rumus Keliling Segitiga : Sisi A + Sisi B + Sisi C</p>
+      </section>
+      <hr />
+      <!-- ini konten bawah luas segitiga -->
+      <section>
+        <header style="text-align: center">
+          <h2>Hitung Keliling Segitiga</h2>
+        </header>
+        <form>
+          <section>
+            <div><label>Alas:</label><input id="alas-input-keliling" type="number"/></div>
+            <div><label>Tinggi:</label><input id="tinggi-input-keliling" type="number"/></div>
+            <div><label>Sisi A:</label><input id="side-a-input-keliling" type="number" /></div>
+            <div><label>Sisi B:</label><input id="side-b-input-keliling" type="number"/></div>
+          </section>
+          <p>Diketahui:</p>
+          <div class="button-responsive" style="display : flex"; id="result-keliling"> 
+            <button type="button" onclick="calculate-keliling" (); id="calculate-btn-keliling">Hitung</button> <br />
+            <button type="button" id="reset-btn-keliling" onclick="resetKeliling"()>Reset</button>
+          </div>
+        </form>
+      </section>
+    </section>
+  </section>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
